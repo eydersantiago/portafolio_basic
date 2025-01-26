@@ -2,7 +2,7 @@
     "nav": {
       "home": "Inicio",
       "about": "Acerca de",
-      "work": "Trabajo",
+      "education": "Educación",
       "contact": "Contacto"
     },
     "languageSwitcher": {
@@ -10,14 +10,14 @@
     },
     "about": {
       "heading": "Hola, soy Eyder Santiago Suárez Chávez",
-      "experience": "Con 12 años de experiencia, he perfeccionado mis habilidades en desarrollo frontend y backend, creando sitios web dinámicos y receptivos.",
+      "experience": "Soy Eyder Santiago Suárez Chávez, una persona responsable, proactiva y con una sólida ética de trabajo. Estoy motivado por el logro de metas tanto personales como profesionales, manteniendo siempre un compromiso con la calidad y la puntualidad en cada proyecto que emprendo. Valoro las oportunidades de aprendizaje y desarrollo, ya que considera que el crecimiento constante es clave para alcanzar el éxito. Además, disfruto trabajando en equipo, respetando y valorando las contribuciones de mis compañeros, lo que me permite construir relaciones de colaboración y confianza.",
       "techStack": "Stack Tecnológico",
-      "techStackDescription": "Me especializo en una variedad de lenguajes, frameworks y herramientas que me permiten crear aplicaciones robustas y escalables.",
-      "flexibility": "Soy muy flexible con las comunicaciones en diferentes zonas horarias y ubicaciones",
-      "location": "Estoy basado en Rijeka, Croacia y estoy abierto a trabajo remoto en todo el mundo.",
+      "techStackDescription": "Me especializo en los siguientes lenguajes, marcos y herramientas que me permiten crear aplicaciones sólidas y escalables. Mi dominio incluye: Lenguajes de programación: Java, Kotlin, Marcos frontend: Angular, React, Marcos backend: Flask, Django, Bases de datos : MySQL, Control de versiones: Git, GitHub",
+      "flexibility": "Soy muy flexible con las zonas horarias",
+      "location": "Estoy estoy abierto a trabajo remoto",
       "contact": "Contáctame",
       "passion": "Mi Pasión por Programar",
-      "passionDescription": "Me encanta resolver problemas y construir cosas a través del código. La programación no es solo mi profesión, es mi pasión. Disfruto explorando nuevas tecnologías y mejorando mis habilidades.",
+      "passionDescription": "Disfruto resolviendo problemas y creando soluciones a través del código. Para mí la programación es más que un simple trabajo: es algo que realmente disfruto. Siempre tengo curiosidad por las nuevas tecnologías y estoy ansioso por seguir mejorando mis habilidades.",
       "emailLabel": "Contáctame",
       "copied": "¡Copiado!"
     },

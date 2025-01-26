@@ -2,7 +2,7 @@
     "nav": {
       "home": "Home",
       "about": "About",
-      "work": "Work",
+      "education": "Education",
       "contact": "Contact"
     },
     "languageSwitcher": {
@@ -10,14 +10,14 @@
     },
     "about": {
       "heading": "Hi, I’m Eyder Santiago Suarez Chavez",
-      "experience": "With 12 years of experience, I have honed my skills in both frontend and backend dev, creating dynamic and responsive websites.",
+      "experience": "I am Eyder Santiago Suárez Chávez, a responsible, proactive person with a solid work ethic. I am motivated by the achievement of both personal and professional goals, always maintaining a commitment to quality and punctuality in each project I undertake. I value learning and development opportunities, as I believe that constant growth is key to achieving success. Additionally, I enjoy working as a team, respecting and valuing the contributions of my colleagues, which allows me to build relationships of collaboration and trust.",
       "techStack": "Tech Stack",
-      "techStackDescription": "I specialize in a variety of languages, frameworks, and tools that allow me to build robust and scalable applications.",
-      "flexibility": "I’m very flexible with time zone communications & locations",
-      "location": "I'm based in Rjieka, Croatia and open to remote work worldwide.",
+      "techStackDescription": "I specialize in the following languages, frameworks and tools that allow me to build robust and scalable applications. My domain includes: Programming languages: Java, Kotlin, Frontend frameworks: Angular, React, Backend frameworks: Flask, Django, Databases: MySQL, Version control: Git, GitHub",
+      "flexibility": "I’m very flexible with time zone",
+      "location": "Estoy estoy abierto a trabajo remoto",
       "contact": "Contact Me",
       "passion": "My Passion for Coding",
-      "passionDescription": "I love solving problems and building things through code. Programming isn't just my profession—it's my passion. I enjoy exploring new technologies, and enhancing my skills.",
+      "passionDescription": "I enjoy solving problems and creating solutions through code. Programming is more than just a job for me—it's something I genuinely enjoy. I’m always curious about new technologies and eager to keep improving my skills.",
       "emailLabel": "Contact me",
       "copied": "Copied!"
     },

@@ -24,7 +24,7 @@
 export const navLinks = [
   { id: 1, key: "nav.home", href: "#home" },
   { id: 2, key: "nav.about", href: "#about" },
-  { id: 3, key: "nav.work", href: "#work" },
+  { id: 3, key: "nav.education", href: "#education" },
   { id: 4, key: "nav.contact", href: "#contact" },
 ];
 
