@@ -41,7 +41,26 @@
       "engineeringStart": "Started Systems Engineering",
       "technologyGraduation": "Graduated from Information Systems Technology",
       "current": "Currently",
-      "currentSemester": "7th semester in Systems Engineering"
+      "currentSemester": "7th semester in Systems Engineering",
+      "date1": "August",
+      "date2": "March",
+      "date3": "April"
+    },
+    "contact": {
+      "heading": "Let's talk",
+      "description": "Whether you want to create a website from scratch, join your team, optimize your current platform or bring a unique project to life, I am here to offer my support.",
+      "fullNameLabel": "Full Name",
+      "fullNamePlaceholder": "e.g., John Doe",
+      "emailLabel": "Email Address",
+      "emailPlaceholder": "e.g., johndoe@gmail.com",
+      "messageLabel": "Your Message",
+      "messagePlaceholder": "Share your thoughts or inquiries...",
+      "sending": "Sending...",
+      "sendMessage": "Send Message",
+      "successMessage": "Thank you for your message 😃",
+      "errorMessage": "I didn't receive your message 😢",
+      "toName": "Eyder Santiago",
+      "toEmail": "eydersuarezc@gmail.com"
     }
     
 }

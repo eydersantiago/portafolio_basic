@@ -13,15 +13,15 @@ const Education = () => {
   // Datos de la línea del tiempo de educación
   const educationData = [
     {
-      date: "Agosto 2018",
+      date: t("education.date1"),
       description: t("education.technologyStart"),
     },
     {
-      date: "Marzo 2023",
+      date: t("education.date2"),
       description: t("education.engineeringStart"),
     },
     {
-      date: "Abril 2023",
+      date: t("education.date3"),
       description: t("education.technologyGraduation"),
     },
     {

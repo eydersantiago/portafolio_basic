@@ -1,18 +1,20 @@
-import emailjs from '@emailjs/browser';
-import { useRef, useState } from 'react';
+import emailjs from "@emailjs/browser";
+import { useRef, useState } from "react";
+import { useTranslation } from "react-i18next";
 
-import useAlert from '../hooks/useAlert.js';
-import Alert from '../components/Alert.jsx';
+import useAlert from "../hooks/useAlert.js";
+import Alert from "../components/Alert.jsx";
 
 const Contact = () => {
+  const { t } = useTranslation(); 
   const formRef = useRef();
 
   const { alert, showAlert, hideAlert } = useAlert();
   const [loading, setLoading] = useState(false);
 
-  const [form, setForm] = useState({ name: '', email: '', message: '' });
+  const [form, setForm] = useState({ name: "", email: "", message: "" });
 
-  const handleChange = ({ target: { name, value } }) => {
+  const handleChange = ({ target: { name, value } }) => {  //service_9e0pu0i
     setForm({ ...form, [name]: value });
   };
 
@@ -26,28 +28,28 @@ const Contact = () => {
         import.meta.env.VITE_APP_EMAILJS_TEMPLATE_ID,
         {
           from_name: form.name,
-          to_name: 'JavaScript Mastery',
-          from_email: form.email,
-          to_email: 'sujata@jsmastery.pro',
+          to_name: t("contact.toName"), 
+          email_id: form.email,
+          to_email: t("contact.toEmail"), 
           message: form.message,
         },
-        import.meta.env.VITE_APP_EMAILJS_PUBLIC_KEY,
+        import.meta.env.VITE_APP_EMAILJS_PUBLIC_KEY
       )
       .then(
         () => {
           setLoading(false);
           showAlert({
             show: true,
-            text: 'Thank you for your message 😃',
-            type: 'success',
+            text: t("contact.successMessage"), 
+            type: "success",
           });
 
           setTimeout(() => {
             hideAlert(false);
             setForm({
-              name: '',
-              email: '',
-              message: '',
+              name: "",
+              email: "",
+              message: "",
             });
           }, [3000]);
         },
@@ -57,10 +59,10 @@ const Contact = () => {
 
           showAlert({
             show: true,
-            text: "I didn't receive your message 😢",
-            type: 'danger',
+            text: t("contact.errorMessage"), 
+            type: "danger",
           });
-        },
+        }
       );
   };
 
@@ -69,18 +71,23 @@ const Contact = () => {
       {alert.show && <Alert {...alert} />}
 
       <div className="relative min-h-screen flex items-center justify-center flex-col">
-        <img src="/assets/terminal.png" alt="terminal-bg" className="absolute inset-0 min-h-screen" />
+        <img
+          src="/assets/terminal.png"
+          alt="terminal-bg"
+          className="absolute inset-0 min-h-screen"
+        />
 
         <div className="contact-container">
-          <h3 className="head-text">Let's talk</h3>
-          <p className="text-lg text-white-600 mt-3">
-            Whether you’re looking to build a new website, improve your existing platform, or bring a unique project to
-            life, I’m here to help.
-          </p>
+          <h3 className="head-text">{t("contact.heading")}</h3>
+          <p className="text-lg text-white-600 mt-3">{t("contact.description")}</p>
 
-          <form ref={formRef} onSubmit={handleSubmit} className="mt-12 flex flex-col space-y-7">
+          <form
+            ref={formRef}
+            onSubmit={handleSubmit}
+            className="mt-12 flex flex-col space-y-7"
+          >
             <label className="space-y-3">
-              <span className="field-label">Full Name</span>
+              <span className="field-label">{t("contact.fullNameLabel")}</span>
               <input
                 type="text"
                 name="name"
@@ -88,12 +95,12 @@ const Contact = () => {
                 onChange={handleChange}
                 required
                 className="field-input"
-                placeholder="ex., John Doe"
+                placeholder={t("contact.fullNamePlaceholder")}
               />
             </label>
 
             <label className="space-y-3">
-              <span className="field-label">Email address</span>
+              <span className="field-label">{t("contact.emailLabel")}</span>
               <input
                 type="email"
                 name="email"
@@ -101,12 +108,12 @@ const Contact = () => {
                 onChange={handleChange}
                 required
                 className="field-input"
-                placeholder="ex., johndoe@gmail.com"
+                placeholder={t("contact.emailPlaceholder")}
               />
             </label>
 
             <label className="space-y-3">
-              <span className="field-label">Your message</span>
+              <span className="field-label">{t("contact.messageLabel")}</span>
               <textarea
                 name="message"
                 value={form.message}
@@ -114,14 +121,17 @@ const Contact = () => {
                 required
                 rows={5}
                 className="field-input"
-                placeholder="Share your thoughts or inquiries..."
+                placeholder={t("contact.messagePlaceholder")}
               />
             </label>
 
             <button className="field-btn" type="submit" disabled={loading}>
-              {loading ? 'Sending...' : 'Send Message'}
-
-              <img src="/assets/arrow-up.png" alt="arrow-up" className="field-btn_arrow" />
+              {loading ? t("contact.sending") : t("contact.sendMessage")}
+              <img
+                src="/assets/arrow-up.png"
+                alt="arrow-up"
+                className="field-btn_arrow"
+              />
             </button>
           </form>
         </div>

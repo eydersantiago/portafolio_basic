@@ -41,7 +41,26 @@
       "engineeringStart": "Empecé Ingeniería de Sistemas",
       "technologyGraduation": "Me gradué de Tecnología en Sistemas de Información",
       "current": "Actualmente",
-      "currentSemester": "Estoy en 7mo semestre de Ingeniería de Sistemas"
+      "currentSemester": "Estoy en 7mo semestre de Ingeniería de Sistemas",
+      "date1": "Agosto",
+      "date2": "Marzo",
+      "date3": "Abril"
+    },
+    "contact": {
+      "heading": "Hablemos",
+      "description": "Ya sea que desees crear un sitio web desde cero, que me incorpore a tu equipo, optimizar tu plataforma actual o dar vida a un proyecto único, estoy aquí para ofrecerte mi apoyo.",
+      "fullNameLabel": "Nombre Completo",
+      "fullNamePlaceholder": "ej., Juan Pérez",
+      "emailLabel": "Dirección de Email",
+      "emailPlaceholder": "ej., juanperez@gmail.com",
+      "messageLabel": "Tu Mensaje",
+      "messagePlaceholder": "Comparte tus ideas o preguntas...",
+      "sending": "Enviando...",
+      "sendMessage": "Enviar Mensaje",
+      "successMessage": "Gracias por tu mensaje 😃",
+      "errorMessage": "No recibí tu mensaje 😢",
+      "toName": "Eyder Santiago",
+      "toEmail": "eydersuarezc@gmail.com"
     }
    
 }
