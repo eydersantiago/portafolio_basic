@@ -1,0 +1,50 @@
+{
+    "nav": {
+      "home": "Inicio",
+      "about": "Acerca de",
+      "work": "Trabajo",
+      "contact": "Contacto"
+    },
+    "languageSwitcher": {
+        "buttonText": "Idioma"
+    },
+    "about": {
+      "heading": "Hola, soy Eyder Santiago Suárez Chávez",
+      "experience": "Con 12 años de experiencia, he perfeccionado mis habilidades en desarrollo frontend y backend, creando sitios web dinámicos y receptivos.",
+      "techStack": "Stack Tecnológico",
+      "techStackDescription": "Me especializo en una variedad de lenguajes, frameworks y herramientas que me permiten crear aplicaciones robustas y escalables.",
+      "flexibility": "Soy muy flexible con las comunicaciones en diferentes zonas horarias y ubicaciones",
+      "location": "Estoy basado en Rijeka, Croacia y estoy abierto a trabajo remoto en todo el mundo.",
+      "contact": "Contáctame",
+      "passion": "Mi Pasión por Programar",
+      "passionDescription": "Me encanta resolver problemas y construir cosas a través del código. La programación no es solo mi profesión, es mi pasión. Disfruto explorando nuevas tecnologías y mejorando mis habilidades.",
+      "emailLabel": "Contáctame",
+      "copied": "¡Copiado!"
+    },
+    "hero":{
+      "me": "Hola, soy Eyder Santiago",
+      "tagline": "Construyendo Productos y Marcas",
+      "button": "Trabajemos juntos"
+    },
+    "projects": {
+      "heading": "Mis Proyectos Seleccionados",
+      "checkLiveSite": "Ver Sitio en Vivo",
+      "podcastr": {
+        "title": "Podcastr - Plataforma de Podcasts con IA",
+        "desc": "Podcastr es una plataforma revolucionaria que transforma la creación de podcasts.",
+        "subdesc": "Con funciones avanzadas de IA, permite a los creadores generar diferentes voces a partir de texto."
+      }
+    },
+    "education": {
+      "heading": "Educación",
+      "technologyStart": "Empecé la Tecnología en Sistemas de Información",
+      "engineeringStart": "Empecé Ingeniería de Sistemas",
+      "technologyGraduation": "Me gradué de Tecnología en Sistemas de Información",
+      "current": "Actualmente",
+      "currentSemester": "Estoy en 7mo semestre de Ingeniería de Sistemas"
+    }
+   
+}
+
+
+  
