@@ -26,7 +26,7 @@ const Navbar = () => {
 
           <nav className="sm:flex hidden items-center space-x-4">
             <NavItems />
-            <LanguageSwitcher />
+            {/* <LanguageSwitcher /> */}
           </nav>
         </div>
       </div>

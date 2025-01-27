@@ -3,9 +3,9 @@ export const navLinks = [
   { id: 1, key: "nav.home", href: "#home" },
   { id: 2, key: "nav.about", href: "#about" },
   { id: 3, key: "nav.education", href: "#education" },
-  { id: 4, key: "nav.contact", href: "#contact" },
+  
   {
-    id: 5,
+    id: 4,
     key: "nav.language.label", // Para el botón principal del dropdown
     href: "#",
     children: [
@@ -13,6 +13,7 @@ export const navLinks = [
       { id: 7, key: "nav.language.en", href: "#en" },
     ],
   },
+  { id: 5, key: "nav.contact", href: "#contact" },
 ];
 
 
