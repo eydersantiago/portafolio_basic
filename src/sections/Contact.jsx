@@ -23,47 +23,38 @@ const Contact = () => {
     setLoading(true);
 
     emailjs
-      .send(
-        import.meta.env.VITE_APP_EMAILJS_SERVICE_ID,
-        import.meta.env.VITE_APP_EMAILJS_TEMPLATE_ID,
-        {
-          from_name: form.name,
-          to_name: t("contact.toName"), 
-          email_id: form.email,
-          to_email: t("contact.toEmail"), 
-          message: form.message,
-        },
-        import.meta.env.VITE_APP_EMAILJS_PUBLIC_KEY
-      )
-      .then(
-        () => {
-          setLoading(false);
-          showAlert({
-            show: true,
-            text: t("contact.successMessage"), 
-            type: "success",
-          });
-
-          setTimeout(() => {
-            hideAlert(false);
-            setForm({
-              name: "",
-              email: "",
-              message: "",
-            });
-          }, [3000]);
-        },
-        (error) => {
-          setLoading(false);
-          console.error(error);
-
-          showAlert({
-            show: true,
-            text: t("contact.errorMessage"), 
-            type: "danger",
-          });
-        }
-      );
+    .send(
+      import.meta.env.VITE_APP_EMAILJS_SERVICE_ID,
+      import.meta.env.VITE_APP_EMAILJS_TEMPLATE_ID,
+      {
+        from_name: form.name,
+        to_name: t("contact.toName"),
+        email_id: form.email,
+        to_email: t("contact.toEmail"),
+        message: form.message,
+      },
+      import.meta.env.VITE_APP_EMAILJS_PUBLIC_KEY
+    )
+    .then(
+      () => {
+        setLoading(false);
+        showAlert({
+          show: true,
+          text: t("contact.successMessage"),
+          type: "success",
+        });
+      },
+      (error) => {
+        setLoading(false);
+        console.error("Error de EmailJS:", error); // Asegúrate de mostrar los errores
+        showAlert({
+          show: true,
+          text: `${t("contact.errorMessage")}: ${error.text || "Error desconocido"}`,
+          type: "danger",
+        });
+      }
+    );
+  
   };
 
   return (
