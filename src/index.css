@@ -13,6 +13,63 @@ body {
   font-family: 'General Sans', sans-serif;
 }
 
+.nav-ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.nav-li {
+  position: relative;
+  margin-bottom: 15px;
+}
+
+.nav-li_a {
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 16px;
+  transition: color 0.3s ease;
+}
+
+.nav-li_a:hover {
+  color: #00bcd4;
+}
+
+.dropdown {
+  list-style: none;
+  margin: 10px 0 0 0;
+  padding: 0;
+  background-color: #222;
+  border-radius: 4px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  position: absolute;
+  left: 0;
+  z-index: 10;
+}
+
+.dropdown-item {
+  display: block;
+  width: 100%;
+  padding: 10px 15px;
+  color: #ffffff;
+  text-align: left;
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 14px;
+  transition: background 0.3s ease;
+}
+
+.dropdown-item:hover {
+  background-color: #00bcd4;
+  color: #000000;
+}
+
+.dropdown-item:focus {
+  outline: none;
+}
+
+
 @layer utilities {
   .c-space {
     @apply sm:px-10 px-5;

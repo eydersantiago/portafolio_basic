@@ -3,7 +3,12 @@
       "home": "Home",
       "about": "About",
       "education": "Education",
-      "contact": "Contact"
+      "contact": "Contact",
+      "language": {
+        "label": "Language", 
+        "es": "Español",
+        "en": "English"
+      }
     },
     "languageSwitcher": {
         "buttonText": "Language"
